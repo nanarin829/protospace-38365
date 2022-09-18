@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
   resources :users, only: :show
 
+  get 'prototypes/show', action: :show, controller: 'prototypes'
+
 end
